@@ -32,21 +32,21 @@ Problem jaki należy rozwiązać to stworzenie inteligentnego systemu wspomagaj�
 Standardowo podczas konferencji uczestnicy sami zajmują się nawiązywaniem relacji i nowych kontaktów. Nie wszyscy jednak wiedzą o sobie wystarczająco dużo, bądź mają pewne cechy osobowości które utrudniają im nawiązanie takich  relacji. W tym zadaniu zostanie stworzony specjalny algorytm który wniesie dodatkową wartość do takich spotkań.
 Warunkiem wstępnym jest to aby każdy uczestnik określił zarówno (1) posiadane przez siebie atrybuty jaki i (2) poszukiwane cechy. Przykładowo osoba może być być inwestorem i znawcą sztuki, ale na konferencji z pewnych powodów będzie jest szczególnie zainteresowany rozmową także z inwestorem, ale także z potencjalnym programistą.
 
-###Przykładowy plik wejściowy
-Algorytm jako wejście otrzymuje listę gości, gdzie każdy z nich jest opisany poprzez (1) posiadane jak i (2) poszukiwane cechy (oddzielone białym symbolem \t).
-+1	DEVELOPER	INVESTOR,DEVELOPER
-+2	INVESTOR	SALES,MARKETING
-+3	DEVELOPER	DEVELOPER,ARCHITECT
-+4	PROJECT_MANAGER	DEVELOPER,ARCHITECT,PROBLEM_SOLVER,DESIGNER
-+5	DESIGNER,MARKETING	PROJECT_MANAGER,INVESTOR
-+6	ARCHITECT	INVESTOR,PROJECT_MANAGER,DEVELOPER
-+7	INVESTOR	INVESTOR
-+8	SALES	INVESTOR,PROJECT_MANAGER
-+9	DEVELOPER	DEVELOPER,PROBLEM_SOLVER,ARCHITECT
-+10	DEVELOPER	MARKETING,SALES
-+11	PROJECT_MANAGER	ARCHITECT,PROBLEM_SOLVER
-+12	PROBLEM_SOLVER	SALES
-+13	MARKETING	MARKETING,SALES
+### Przykładowy plik wejściowy
+Algorytm jako wejście otrzymuje listę gości, gdzie każdy z nich jest opisany poprzez (1) posiadane jak i (2) poszukiwane cechy (oddzielone białym symbolem *\t*).
++ 1	DEVELOPER	INVESTOR,DEVELOPER
++ 2	INVESTOR	SALES,MARKETING
++ 3	DEVELOPER	DEVELOPER,ARCHITECT
++ 4	PROJECT_MANAGER	DEVELOPER,ARCHITECT,PROBLEM_SOLVER,DESIGNER
++ 5	DESIGNER,MARKETING	PROJECT_MANAGER,INVESTOR
++ 6	ARCHITECT	INVESTOR,PROJECT_MANAGER,DEVELOPER
++ 7	INVESTOR	INVESTOR
++ 8	SALES	INVESTOR,PROJECT_MANAGER
++ 9	DEVELOPER	DEVELOPER,PROBLEM_SOLVER,ARCHITECT
++ 10	DEVELOPER	MARKETING,SALES
++ 11	PROJECT_MANAGER	ARCHITECT,PROBLEM_SOLVER
++ 12	PROBLEM_SOLVER	SALES
++ 13	MARKETING	MARKETING,SALES
 
 
 Jego wynikiem jest zasugerowanie każdemu uczestnikowi 5 osób które będą dla niego interesujące. Kryterium dopasowania (funkcja celu) tak więc jest miara spełniania oczekiwań użytkowników konferencji i powinna być ona zmaksymalizowana w trakcie działania algorytmu.
